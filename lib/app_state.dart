@@ -35,7 +35,7 @@ class FFAppState extends ChangeNotifier {
 
   late SharedPreferences prefs;
 
-  List<double> _xaxis = [];
+  List<double> _xaxis = [0.0, 15.0];
   List<double> get xaxis => _xaxis;
   set xaxis(List<double> value) {
     _xaxis = value;
