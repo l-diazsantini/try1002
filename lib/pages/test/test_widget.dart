@@ -39,7 +39,7 @@ class _TestWidgetState extends State<TestWidget> {
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       _model.instantTimer = InstantTimer.periodic(
-        duration: Duration(milliseconds: 30000),
+        duration: Duration(milliseconds: 10000),
         callback: (timer) async {
           _model.dataaa = await actions.receiveData(
             widget!.devicee!,
